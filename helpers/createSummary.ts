@@ -1,6 +1,7 @@
 import { IDtm, ITable } from "@/interfaces/dtm"
+import { IPiloto } from "@/interfaces/piloto";
 
-export const createSummary = function (campeonatos: IDtm[]): ITable[] {
+export const createSummary = function (campeonatos: IDtm[], pilotos:IPiloto[]): ITable[] {
 
     const summary: ITable[] = [];
     let count = 0;
@@ -13,9 +14,11 @@ export const createSummary = function (campeonatos: IDtm[]): ITable[] {
                 summary[found].podios = summary[found].podios + 1;
             }
             else {
+                count = count + 1;
                 summary.push({
                     key: count + 1,
                     piloto: resultado.Primero,
+                    pais: pilotos.filter( piloto => piloto.piloto === resultado.Primero)[0].pais || "",
                     primero: 1,
                     segundo: 0,
                     tercero: 0,
@@ -31,9 +34,11 @@ export const createSummary = function (campeonatos: IDtm[]): ITable[] {
                 summary[found].podios = summary[found].podios + 1;
              }
             else {
+                count = count + 1;
                 summary.push({
                     key: count + 1,
                     piloto: resultado.Segundo,
+                    pais: pilotos.filter( piloto => piloto.piloto === resultado.Segundo)[0]?.pais || "",
                     primero: 0,
                     segundo: 1,
                     tercero: 0,
@@ -48,9 +53,11 @@ export const createSummary = function (campeonatos: IDtm[]): ITable[] {
                 summary[found].tercero = summary[found].tercero + 1;
                 summary[found].podios = summary[found].podios + 1; }
             else {
+                count = count + 1;
                 summary.push({
                     key: count + 1,
                     piloto: resultado.Tercero,
+                    pais: pilotos.filter( piloto => piloto.piloto === resultado.Tercero)[0].pais || "",
                     primero: 0,
                     segundo: 0,
                     tercero: 1,
@@ -64,9 +71,11 @@ export const createSummary = function (campeonatos: IDtm[]): ITable[] {
             if (found > -1) { 
                 summary[found].pp = summary[found].pp + 1 }
             else {
+                count = count + 1;
                 summary.push({
                     key: count + 1,
                     piloto: resultado.PP,
+                    pais: pilotos.filter( piloto => piloto.piloto === resultado.PP)[0].pais || "",
                     primero: 0,
                     segundo: 0,
                     tercero: 0,
@@ -80,9 +89,11 @@ export const createSummary = function (campeonatos: IDtm[]): ITable[] {
             if (found > -1) { 
                 summary[found].vr = summary[found].vr + 1 }
             else {
+                count = count + 1;
                 summary.push({
                     key: count + 1,
                     piloto: resultado.VR,
+                    pais: pilotos.filter( piloto => piloto.piloto === resultado.VR)[0].pais || "",
                     primero: 0,
                     segundo: 0,
                     tercero: 0,
@@ -93,7 +104,7 @@ export const createSummary = function (campeonatos: IDtm[]): ITable[] {
             }
         })
     })
-
+   
     return summary.sort((a,b) => {
         if(a.primero === b.primero)
             {   

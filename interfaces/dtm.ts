@@ -20,6 +20,7 @@ export interface ITable {
 
     key: number;
     piloto:  string;
+    pais: string;
     primero: number;
     segundo: number;
     tercero: number;
