@@ -1,0 +1,372 @@
+[{
+  "_id": "2020DTM",
+  "campeonato": 2020,
+  "resultados": [
+    {
+      "Carrera": 1,
+      "Circuito": "Nurburgrin-Alemania",
+      "PP": "Marco Millan",
+      "VR": "Marco Millan",
+      "Primero": "Wilmar Patiño",
+      "Segundo": "Hector Garcia",
+      "Tercero": "Marco Millan"
+    },
+    {
+      "Carrera": 2,
+      "Circuito": "Laguna Seca-Usa",
+      "PP": "Wilmar Patiño",
+      "VR": "Wilmar Patiño",
+      "Primero": "Wilmar Patiño",
+      "Segundo": "Marco Millan",
+      "Tercero": "Reymont Vera"
+    },
+    {
+      "Carrera": 3,
+      "Circuito": "Algarve-Portugal",
+      "PP": "Reymont Vera",
+      "VR": "Reymont Vera",
+      "Primero": "Marco Millan",
+      "Segundo": "Reymont Vera",
+      "Tercero": "Juan C. Gargaglione"
+    },
+    {
+      "Carrera": 4,
+      "Circuito": "Norisring-Alemania",
+      "PP": "Juan C. Gargaglione",
+      "VR": "Marco Millan",
+      "Primero": "Marco Millan",
+      "Segundo": "Pablo Bramuel",
+      "Tercero": "Nahuel Paz"
+    },
+    {
+      "Carrera": 5,
+      "Circuito": "Magny cours-Francia",
+      "PP": "Ponchi Hantouche",
+      "VR": "Ponchi Hantouche",
+      "Primero": "Wilmar Patiño",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Nicolas Soto"
+    },
+    {
+      "Carrera": 6,
+      "Circuito": "Interlagos-Brasil",
+      "PP": "Ponchi Hantouche",
+      "VR": "Ponchi Hantouche",
+      "Primero": "Ponchi Hantouche",
+      "Segundo": "Nicolas Soto",
+      "Tercero": "Nahuel Paz"
+    },
+    {
+      "Carrera": 7,
+      "Circuito": "Spa-Belgica",
+      "PP": "Ponchi Hantouche",
+      "VR": "Reymont Vera",
+      "Primero": "Reymont Vera",
+      "Segundo": "Nicolas Soto",
+      "Tercero": "Vladimir Lopez"
+    },
+    {
+      "Carrera": 8,
+      "Circuito": "Zanvoord-Holanda",
+      "PP": "Ponchi Hantouche",
+      "VR": "Ponchi Hantouche",
+      "Primero": "Ponchi Hantouche",
+      "Segundo": "Nicolas Soto",
+      "Tercero": "Rafael Leon"
+    },
+    {
+      "Carrera": 9,
+      "Circuito": "A1-ring-Francia",
+      "PP": "Ponchi Hantouche",
+      "VR": "Ponchi Hantouche",
+      "Primero": "Ponchi Hantouche",
+      "Segundo": "Nicolas Soto",
+      "Tercero": "Rafael Leon"
+    },
+    {
+      "Carrera": 10,
+      "Circuito": "Grobnik-Croacia",
+      "PP": "Reymont Vera",
+      "VR": "Reymont Vera",
+      "Primero": "Reymont Vera",
+      "Segundo": "Wilmar Patiño",
+      "Tercero": "Marco Millan"
+    }
+  ]
+},{
+  "_id": "2021DTM",
+  "campeonato": 2021,
+  "resultados": [
+    {
+      "Carrera": 1,
+      "Circuito": "Zolder-Belgica",
+      "PP": "Hector Garcia",
+      "VR": "Hector Garcia",
+      "Primero": "Hector Garcia",
+      "Segundo": "Rafael Leon",
+      "Tercero": "Juan C. Gargaglione"
+    },
+    {
+      "Carrera": 2,
+      "Circuito": "Brand Hatch- England",
+      "PP": "Duvan Gomez",
+      "VR": "Duvan Gomez",
+      "Primero": "Hector Garcia",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Wilmar Patiño"
+    },
+    {
+      "Carrera": 3,
+      "Circuito": "Laguna Seca-Usa",
+      "PP": "Duvan Gomez",
+      "VR": "Duvan Gomez",
+      "Primero": "Duvan Gomez",
+      "Segundo": "Jose Goncalvez",
+      "Tercero": "Ponchi Hantouche"
+    },
+    {
+      "Carrera": 4,
+      "Circuito": "Anderstorp-Suecia",
+      "PP": "Duvan Gomez",
+      "VR": "Duvan Gomez",
+      "Primero": "Rafael Leon",
+      "Segundo": "Duvan Gomez",
+      "Tercero": "Reymont Vera"
+    },
+    {
+      "Carrera": 5,
+      "Circuito": "Monza-Italia",
+      "PP": "Rafael Leon",
+      "VR": "Jose Goncalvez",
+      "Primero": "Jose Goncalvez",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Wilmar Patiño"
+    },
+    {
+      "Carrera": 6,
+      "Circuito": "Norisring-Alemania",
+      "PP": "Vladimir Lopez",
+      "VR": "Roberto Gimenez",
+      "Primero": "Wilmar Patiño",
+      "Segundo": "Rafael Leon",
+      "Tercero": "Juan C. Gargaglione"
+    },
+    {
+      "Carrera": 7,
+      "Circuito": "Donington Park-UK",
+      "PP": "Roberto Gimenez",
+      "VR": "Reymont Vera",
+      "Primero": "Reymont Vera",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Matias Lescano"
+    },
+    {
+      "Carrera": 8,
+      "Circuito": "Nurburgrin-Alemania",
+      "PP": "Rafael Leon",
+      "VR": "Roberto Gimenez",
+      "Primero": "Reymont Vera",
+      "Segundo": "Matias Lescano",
+      "Tercero": "Ponchi Hantouche"
+    },
+    {
+      "Carrera": 9,
+      "Circuito": "Hockenheim-Alemania",
+      "PP": "Esteban Torres",
+      "VR": "Juan C. Gargaglione",
+      "Primero": "Vladimir Lopez",
+      "Segundo": "Rafael Leon",
+      "Tercero": "Juan C. Gargaglione"
+    },
+    {
+      "Carrera": 10,
+      "Circuito": "Zanvoord-Holanda",
+      "PP": "Esteban Torres",
+      "VR": "Javier Rodriguez",
+      "Primero": "Javier Rodriguez",
+      "Segundo": "Veronica Pagniez",
+      "Tercero": "Esteban Torres"
+    },
+    {
+      "Carrera": 11,
+      "Circuito": "Spa-Belgica",
+      "PP": "Ayrton Alexander",
+      "VR": "Ayrton Alexander",
+      "Primero": "Ayrton Alexander",
+      "Segundo": "Esteban Torres",
+      "Tercero": "Reymont Vera"
+    },
+    {
+      "Carrera": 12,
+      "Circuito": "Marina Bay-Singapore",
+      "PP": "Nicolas Soto",
+      "VR": "Wilmar Patiño",
+      "Primero": "Wilmar Patiño",
+      "Segundo": "Nicolas Soto",
+      "Tercero": "Reymont Vera"
+    },
+    {
+      "Carrera": 13,
+      "Circuito": "Melbourne-Australia",
+      "PP": "Pablo Bramuel",
+      "VR": "Vladimir Lopez",
+      "Primero": "Ayrton Alexander",
+      "Segundo": "Pablo Bramuel",
+      "Tercero": "Reymont Vera"
+    },
+    {
+      "Carrera": 14,
+      "Circuito": "Algarve-Portugal",
+      "PP": "Roberto Gimenez",
+      "VR": "Vladimir Lopez",
+      "Primero": "Roberto Gimenez",
+      "Segundo": "Vladimir Lopez",
+      "Tercero": "Reymont Vera"
+    },
+    {
+      "Carrera": 15,
+      "Circuito": "Magny cours-Francia",
+      "PP": "Ayrton Alexander",
+      "VR": "Ayrton Alexander",
+      "Primero": "Juan C. Gargaglione",
+      "Segundo": "Ayrton Alexander",
+      "Tercero": "Wilmar Patiño"
+    },
+    {
+      "Carrera": 16,
+      "Circuito": "Paul Ricard-Francia",
+      "PP": "Roberto Gimenez",
+      "VR": "Roberto Gimenez",
+      "Primero": "Roberto Gimenez",
+      "Segundo": "Pablo Bramuel",
+      "Tercero": "Rafael Leon"
+    },
+    {
+      "Carrera": 17,
+      "Circuito": "Istambul-Turquia",
+      "PP": "Rafael Leon",
+      "VR": "Rafael Leon",
+      "Primero": "Rafael Leon",
+      "Segundo": "Reymont Vera",
+      "Tercero": "Vladimir Lopez"
+    },
+    {
+      "Carrera": 18,
+      "Circuito": "A1-Ring-Francia",
+      "PP": "Nico Nandin",
+      "VR": "Roberto Gimenez",
+      "Primero": "Rafael Leon",
+      "Segundo": "Pablo Bramuel",
+      "Tercero": "Reymont Vera"
+    }
+  ]
+},{
+  "_id": "2022DTM",
+  "campeonato": 2022,
+  "resultados": [
+    {
+      "Carrera": 1,
+      "Circuito": "Laguna Seca-Usa",
+      "PP": "Ayrton Alexander",
+      "VR": "Roberto Gimenez",
+      "Primero": "Rafael Leon",
+      "Segundo": "Ayrton Alexander",
+      "Tercero": "Juan C. Gargaglione"
+    },
+    {
+      "Carrera": 2,
+      "Circuito": "Sepang-Malasya",
+      "PP": "Ponchi Hantouche",
+      "VR": "Ponchi Hantouche",
+      "Primero": "Jonathan Chapoñan",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Wilmar Patiño"
+    },
+    {
+      "Carrera": 3,
+      "Circuito": "Donington Park-UK",
+      "PP": "Esteban Torres",
+      "VR": "Jonathan Chapoñan",
+      "Primero": "Rafael Leon",
+      "Segundo": "Jonathan Chapoñan",
+      "Tercero": "Ponchi Hantouche"
+    },
+    {
+      "Carrera": 4,
+      "Circuito": "Anderstorp-Suecia",
+      "PP": "Roberto Gimenez",
+      "VR": "Reymont Vera",
+      "Primero": "Ponchi Hantouche",
+      "Segundo": "Pablo Bramuel",
+      "Tercero": "Wilmar Patiño"
+    },
+    {
+      "Carrera": 5,
+      "Circuito": "Nurburgrin-Alemania",
+      "PP": "Juan C. Gargaglione",
+      "VR": "Ponchi Hantouche",
+      "Primero": "Javier Rodriguez",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Wilmar Patiño"
+    },
+    {
+      "Carrera": 6,
+      "Circuito": "Zanvoord-Holanda",
+      "PP": "Rafael Leon",
+      "VR": "Rafael Leon",
+      "Primero": "Rafael Leon",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Wilmar Patiño"
+    },
+    {
+      "Carrera": 7,
+      "Circuito": "Algarve-Portugal",
+      "PP": "Reymont Vera",
+      "VR": "Reymont Vera",
+      "Primero": "Javier Rodriguez",
+      "Segundo": "Hector Garcia",
+      "Tercero": "Rafael Leon"
+    },
+    {
+      "Carrera": 8,
+      "Circuito": "Magny cours-Francia",
+      "PP": "Reymont Vera",
+      "VR": "Reymont Vera",
+      "Primero": "Reymont Vera",
+      "Segundo": "Javier Rodriguez",
+      "Tercero": "Ponchi Hantouche"
+    },
+    {
+      "Carrera": 9,
+      "Circuito": "Austin-Usa",
+      "PP": "Juan C. Gargaglione",
+      "VR": "Ponchi Hantouche",
+      "Primero": "Reymont Vera",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Juan C. Gargaglione"
+    },
+    {
+      "Carrera": 10,
+      "Circuito": "A1-Ring-Francia",
+      "PP": "Javier Rodriguez",
+      "VR": "Reymont Vera",
+      "Primero": "Hector Garcia",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Juan C. Gargaglione"
+    }
+  ]
+},{
+  "_id": "2023DTM",
+  "campeonato": 2023,
+  "resultados": [
+    {
+      "Carrera": 1,
+      "Circuito": "Buenos Aires - Argentina",
+      "PP": "Reymont Vera",
+      "VR": "Rafael Leon",
+      "Primero": "Hector Garcia",
+      "Segundo": "Ponchi Hantouche",
+      "Tercero": "Javier Rodriguez"
+    }
+  ]
+}]
