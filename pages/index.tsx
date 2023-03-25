@@ -4,23 +4,30 @@ import { HistoricalTable } from '@/components/HistoricalTable';
 import { getDtmHistorical } from '@/database/dtm';
 import { createSummary } from "@/helpers/createSummary";
 import { getAllPilots } from '@/database/pilotos';
+import Head from 'next/head';
 
 interface HomePageProps {
   summary: ITable[]
 }
 
-const HomePage:NextPage<HomePageProps> = ({summary}) => {
+const HomePage: NextPage<HomePageProps> = ({ summary }) => {
 
-  return (  
+  return (
+    <>
+      <Head>
+        <title>Sim Racing Latinoamerica</title>
+        <meta property="og:title" content="My page title" key="title" />
+      </Head>
       <HistoricalTable dtm={summary} />
+    </>
   )
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-  
+
   const dtm = await getDtmHistorical();
   const pilotos = await getAllPilots() || [];
-  
+
   const summary = createSummary(dtm!, pilotos)
 
   return {
