@@ -5,7 +5,8 @@ import { Divider, Table, Grid, Typography } from "antd";
 import { ColumnsType } from 'antd/lib/table'
 import localFont from "next/font/local"
 
-const myFont = localFont({ src: '../public/TitilliumWeb-Light.ttf', variable:'--font-titillium' })
+const myFont = localFont({ src: '../public/Formula1-Regular.otf' })
+
 interface HistoricalTableProps {
   dtm: ITable[];
 }
@@ -20,9 +21,9 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       dataIndex: 'piloto',
       key: 'piloto',
       align: "left",
-      width: "28%",
+      width: "35%",
       render: ((text) =>
-        <Typography className={myFont.className} style={!screens.sm ? { fontSize:'0.75rem', fontWeight: 600 }:{ fontWeight: 600 }}>{text}</Typography>
+        <Typography className={myFont.className} style={!screens.sm ? { fontSize:'0.6rem', fontWeight: 300 }:{ fontWeight: 300 }}>{text}</Typography>
       )
     },
     {
@@ -52,7 +53,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       key: 'segundo',
       sorter: !screens.sm ? false : (a: { segundo: number; }, b: { segundo: number; }) => a.segundo - b.segundo,
       align: "center",
-      width: !screens.sm ? "5%" : '11%',
+      width: !screens.sm ? "5%" : '10%',
       render: ((text) =>
         <Typography className={myFont.className} style={{ fontWeight: 400 }}>{text}</Typography>
       )
@@ -63,7 +64,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       key: 'tercero',
       sorter: !screens.sm ? false : (a: { tercero: number; }, b: { tercero: number; }) => a.tercero - b.tercero,
       align: "center",
-      width: !screens.sm ? "5%" : '11%',
+      width: !screens.sm ? "5%" : '10%',
       render: ((text) =>
         <Typography className={myFont.className} style={{ fontWeight: 400 }}>{text}</Typography>
       )
@@ -74,7 +75,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       key: 'podios',
       sorter: (a: { podios: number; }, b: { podios: number; }) => a.podios - b.podios,
       align: "center",
-      width: !screens.sm ? "5%" : '11%',
+      width: !screens.sm ? "5%" : '10%',
       responsive: ['sm'],
       render: ((text) =>
         <Typography className={myFont.className} style={{ fontWeight: 400 }}>{text}</Typography>
@@ -86,7 +87,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       key: 'pp',
       sorter: !screens.sm ? false : (a: { pp: number; }, b: { pp: number; }) => a.pp - b.pp,
       align: "center",
-      width: !screens.sm ? "5%" : '11%',
+      width: !screens.sm ? "5%" : '10%',
       render: ((text) =>
         <Typography className={myFont.className} style={{ fontWeight: 400 }}>{text}</Typography>
       )
@@ -106,7 +107,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
 
 
   return (
-    <div style={!screens.sm ? { margin: '3em auto', boxShadow: "rgba(17, 17, 26, 0.1) 0px 0px 16px" } : { width: 700, margin: '3em auto', boxShadow: "rgba(17, 17, 26, 0.1) 0px 0px 16px" }}>
+    <div style={!screens.sm ? { margin: '3em auto', boxShadow: "rgba(17, 17, 26, 0.1) 0px 0px 16px" } : { maxWidth: 720, margin: '3em auto', boxShadow: "rgba(17, 17, 26, 0.1) 0px 0px 16px" }}>
       <Table
         title={() => (
           <>
