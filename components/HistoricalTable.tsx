@@ -116,7 +116,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
               <h1>DTM</h1>
             </div>
             <Divider style={{ backgroundColor: "#ddfe81", margin: 0 }} />
-            <Typography className={myFont.className} style={{ fontWeight: 600, color: "#ddfe81" }}>Record Historico de Campeonatos 2020-2023</Typography>
+            <Typography className={myFont.className} style={!screens.sm ?{ fontSize:'0.5rem', fontWeight: 600, color: "#ddfe81" }:{ fontWeight: 600, color: "#ddfe81" }}>Record Historico de Campeonatos 2020-2023</Typography>
           </>
         )}
         dataSource={dtm}
