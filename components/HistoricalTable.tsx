@@ -23,7 +23,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       align: "left",
       width: "35%",
       render: ((text) =>
-        <Typography className={myFont.className} style={!screens.sm ? { fontSize:'0.6rem', fontWeight: 300 }:{ fontWeight: 300 }}>{text}</Typography>
+        <Typography className={myFont.className} style={!screens.sm ? { fontSize:'0.7rem', fontWeight: 300 }:{ fontWeight: 300 }}>{text}</Typography>
       )
     },
     {
