@@ -11,10 +11,8 @@ interface HomePageProps {
 
 const HomePage:NextPage<HomePageProps> = ({summary}) => {
 
-  return (
-    <>
-      <HistoricalTable dtm={summary}/>
-    </>
+  return (  
+      <HistoricalTable dtm={summary} />
   )
 }
 
