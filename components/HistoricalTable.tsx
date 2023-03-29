@@ -36,7 +36,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       )
     },
     {
-      title: !screens.sm ? '🏆' : 'Primero',
+      title: !screens.md ? '🏆' : 'Primero',
       dataIndex: 'primero',
       key: 'primero',
       sorter: !screens.sm ? false : (a: { primero: number; }, b: { primero: number; }) => a.primero - b.primero,
@@ -46,7 +46,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       )
     },
     {
-      title: !screens.sm ? '🥈' : 'Segundo',
+      title: !screens.md ? '🥈' : 'Segundo',
       dataIndex: 'segundo',
       key: 'segundo',
       sorter: !screens.sm ? false : (a: { segundo: number; }, b: { segundo: number; }) => a.segundo - b.segundo,
@@ -56,7 +56,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       )
     },
     {
-      title: !screens.sm ? '🥉' : 'Tercero',
+      title: !screens.md ? '🥉' : 'Tercero',
       dataIndex: 'tercero',
       key: 'tercero',
       sorter: !screens.sm ? false : (a: { tercero: number; }, b: { tercero: number; }) => a.tercero - b.tercero,
@@ -71,7 +71,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       key: 'podios',
       sorter: (a: { podios: number; }, b: { podios: number; }) => a.podios - b.podios,
       align: "center",
-      responsive: ['sm'],
+      responsive: ['md'],
       render: ((text) =>
         <Typography className={myFont.className} style={{ fontWeight: 400 }}>{text}</Typography>
       )
