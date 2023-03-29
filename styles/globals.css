@@ -1,7 +1,8 @@
 :root{
   background-color: #000022;
-  background-image: url("/fondo.jpg");
-  background-attachment: fixed;
+  box-sizing: border-box;
+  margin: 0;
+  padding:0;
 }
 
 .ant-table-title{
@@ -27,7 +28,7 @@
 .ant-table-thead{
   font-size: 0.8rem;
   color:#00304f;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  font-family:Verdana, Tahoma, sans-serif;
 }
 
 .ant-table-cell{
