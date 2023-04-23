@@ -1,6 +1,7 @@
 import { IDtm } from "@/interfaces/dtm"
 import { IPiloto, IPilotoWins } from "@/interfaces/piloto";
 
+//Fill Pilots who wins already
 export const pilotCircuitsWins = function (campeonatos: IDtm[], pilotos: IPiloto[]): IPilotoWins[] {
 
     const summary: IPilotoWins[] = [];
