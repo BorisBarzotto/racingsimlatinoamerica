@@ -24,6 +24,5 @@ export const pilotCircuitsWins = function (campeonatos: IDtm[], pilotos: IPiloto
             }
         })
     })
-    console.log(summary);
     return summary;
 }
