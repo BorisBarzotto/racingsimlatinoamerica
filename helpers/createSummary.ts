@@ -9,6 +9,7 @@ export const createSummary = function (campeonatos: IDtm[], pilotos:IPiloto[]): 
     campeonatos.forEach(campeonato => {
         campeonato.resultados.forEach(resultado => {
             let found = summary.findIndex(x => x.piloto === resultado.Primero);
+
             if (found > -1) { 
                 summary[found].primero = summary[found].primero + 1;
                 summary[found].podios = summary[found].podios + 1;

@@ -1,19 +1,45 @@
-import { FunctionComponent } from "react";
+import { FunctionComponent, MouseEvent, useState } from "react";
 import Image from "next/image"
 import { ITable } from "@/interfaces/dtm";
 import { Divider, Table, Grid, Typography } from "antd";
 import { ColumnsType } from 'antd/lib/table'
 import localFont from "next/font/local"
+import { PilotInfo } from "./PilotInfo";
+import { IPiloto, IPilotoWins } from "@/interfaces/piloto";
 
 const myFont = localFont({ src: '../public/Formula1-Regular.otf' })
 
 interface HistoricalTableProps {
   dtm: ITable[];
+  pilotWins: IPilotoWins[];
+  pilotos: IPiloto[];
 }
 
-export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }) => {
+export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm, pilotWins, pilotos }) => {
 
   const screens = Grid.useBreakpoint()
+  const [open, setOpen] = useState(false);
+  const [pilot, setPilot ] = useState<IPilotoWins>({ _id: 1000,
+    piloto: '',
+    pais: '',
+    victorias: ['Todavia sin victorias...']});
+
+  const showDrawer = (text: string) => {
+    let found = pilotWins.find(x => x.piloto === text);
+    if (found) {
+      setPilot(found)
+    }
+    else(setPilot(    
+      { _id: 1000,
+        piloto: text,
+        pais: pilotos.find(x => x.piloto === text)?.pais ?? '',
+        victorias: ['Todavia sin victorias...']}))
+    setOpen(true);
+  };
+
+  const onClose = () => {
+    setOpen(false);
+  };
 
   const columns: ColumnsType<ITable> = [
     {
@@ -23,7 +49,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
       align: "left",
 
       render: ((text) =>
-        <Typography className={myFont.className} style={!screens.sm ? { fontSize:'0.7rem', fontWeight: 300 }:{ fontWeight: 300 }}>{text}</Typography>
+        <Typography onClick={()=>showDrawer(text)} className={myFont.className} style={!screens.sm ? { fontSize:'0.7rem', fontWeight: 300, cursor:'pointer' }:{ fontWeight: 300, cursor:'pointer' }}>{text}</Typography>
       )
     },
     {
@@ -123,6 +149,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm }
         rowKey={(dtm) => dtm.key}
       />
     </div>
+    <PilotInfo open={open} onClose={onClose} pilot={pilot}  />
     </>
   )
 }

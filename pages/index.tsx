@@ -5,12 +5,16 @@ import { getDtmHistorical } from '@/database/dtm';
 import { createSummary } from "@/helpers/createSummary";
 import { getAllPilots } from '@/database/pilotos';
 import Head from 'next/head';
+import { pilotCircuitsWins } from '@/helpers/pilotCircuitsWins';
+import { IPiloto, IPilotoWins } from '@/interfaces/piloto';
 
 interface HomePageProps {
-  summary: ITable[]
+  summary: ITable[];
+  pilotWins: IPilotoWins[];
+  pilotos: IPiloto[];
 }
 
-const HomePage: NextPage<HomePageProps> = ({ summary }) => {
+const HomePage: NextPage<HomePageProps> = ({ summary, pilotWins, pilotos }) => {
 
   return (
     <>
@@ -18,21 +22,24 @@ const HomePage: NextPage<HomePageProps> = ({ summary }) => {
         <title>Sim Racing Latinoamerica</title>
         <meta property="og:title" content="My page title" key="title" />
       </Head>
-      <HistoricalTable dtm={summary} />
+      <HistoricalTable dtm={summary} pilotWins={pilotWins} pilotos={pilotos}/>
     </>
   )
 }
 
 export const getStaticProps: GetStaticProps = async (ctx) => {
-
+  
   const dtm = await getDtmHistorical();
   const pilotos = await getAllPilots() || [];
 
-  const summary = createSummary(dtm!, pilotos)
+  const summary = createSummary(dtm!, pilotos);
+  const pilotWins = pilotCircuitsWins(dtm!, pilotos);
 
   return {
     props: {
-      summary
+      summary,
+      pilotWins,
+      pilotos
     }
   }
 }
