@@ -1,4 +1,4 @@
-import { FunctionComponent, MouseEvent, useState } from "react";
+import { FunctionComponent, useState } from "react";
 import Image from "next/image"
 import { ITable } from "@/interfaces/dtm";
 import { Divider, Table, Grid, Typography } from "antd";
@@ -135,7 +135,7 @@ export const HistoricalTable: FunctionComponent<HistoricalTableProps> = ({ dtm, 
         title={() => (
           <>
             <div style={{ display: 'flex', flexDirection: 'row', padding: "0.5em 0em 0.5em 0.5em" }}>
-              <Image src="/srl-logo.png" width={80} height={80} alt={"logo simracinglatinoamerica"} />
+              <Image src="/logo-srl-latinoamerica.png" width={80} height={80} alt={"logo simracinglatinoamerica"} />
               <h1>DTM</h1>
             </div>
             <Divider style={{ backgroundColor: "#ddfe81", margin: 0 }} />
